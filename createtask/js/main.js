@@ -1,13 +1,27 @@
 const DOM = {
     newcard: document.getElementById("newcard"),
     Restart: document.getElementById("restartgame"),
-    
+    form: document.getElementById
+    ("form"),
+    display: document.getElementById("display"),
+    btn: document.getElementById
+  ("btn"),//submit
 };
-DOM.Restart.addEventListener("click", function () {
-    DOM.menupage.innerHTML = "";
-    screwvegan();
+DOMselectors.form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    input();
   });
+
+function input() {
+    DOMselectors.display.insertAdjacentHTML(
+      "beforeend",
   
+      `
+          <button class="remove btn">remove</button>
+        </div>`
+    );
+    card();
+  }
   function card() {
     let remove = document.querySelectorAll(".remove")
     console.log(remove);
@@ -15,4 +29,3 @@ DOM.Restart.addEventListener("click", function () {
         this.parentElement.remove();    });
     });
 };
- 
