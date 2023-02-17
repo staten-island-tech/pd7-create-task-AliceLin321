@@ -7,25 +7,27 @@ const DOM = {
     btn: document.getElementById
   ("btn"),//submit
 };
-DOMselectors.form.addEventListener("submit", function (event) {
-    event.preventDefault();
-    input();
-  });
+DOMselectors.form.addEventListener("start", function (event) {
+  event.preventDefault();
+  input();
+});
 
-function input() {
-    DOMselectors.display.insertAdjacentHTML(
-      "beforeend",
-  
-      `
-          <button class="remove btn">remove</button>
-        </div>`
-    );
-    card();
-  }
-  function card() {
-    let remove = document.querySelectorAll(".remove")
-    console.log(remove);
-    remove.forEach((el) => {el.addEventListener("click" , function (el) {
-        this.parentElement.remove();    });
-    });
+function card() {
+  let remove = document.querySelectorAll(".remove")
+  console.log(remove);
+  remove.forEach((el) => {el.addEventListener("click" , function (el) {
+      this.parentElement.remove();    });
+  });
 };
+function input() {
+  DOMselectors.display.insertAdjacentHTML(
+    "beforeend",
+
+    `
+    <button class="remove btn">remove</button>
+      </div>`
+  );
+  card();
+}
+
+
