@@ -1,5 +1,3 @@
-import './style.css'
-
 const deck = [
     {
         name:"Ace",
@@ -57,4 +55,3 @@ const deck = [
     },
 ];
 "https://static7.depositphotos.com/1257959/746/v/950/depositphotos_7461948-stock-illustration-playing-card-back-side-62x90.jpg"
-export { deck };
