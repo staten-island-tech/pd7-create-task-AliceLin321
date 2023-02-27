@@ -1,5 +1,3 @@
-
-
 const DOM = {
     newcard: document.getElementById("newcard"),
     Restart: document.getElementById("restartgame"),
