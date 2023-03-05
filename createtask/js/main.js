@@ -3,11 +3,11 @@ const DOM = {
   yes:  document.getElementById("yes"),
   no: document.getElementById("no"),
   start: document.getElementById("start"),
-  
+
 
 };
 
-const deck = [
+const array = [
   {
       name:"Ace",
       joker: "false",
@@ -69,3 +69,8 @@ img: "https://i.pinimg.com/originals/fb/b3/69/fbb3699e5908f0769478375d57917c14.p
   },
 ];
 
+function nom () {
+  pictures = Math.floor(Math.random() * deck.length);
+getpic = deck[pictures]
+document.getElementById()
+}
