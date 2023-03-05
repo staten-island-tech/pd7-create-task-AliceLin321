@@ -1,13 +1,13 @@
-
+import "../styles/style.css";
 const DOM = {
   yes:  document.getElementById("yes"),
   no: document.getElementById("no"),
   start: document.getElementById("start"),
-
+  restart: document.getElementById("restart"),
 
 };
 
-const array = [
+image_array = [
   {
       name:"Ace",
       joker: "false",
@@ -69,8 +69,9 @@ img: "https://i.pinimg.com/originals/fb/b3/69/fbb3699e5908f0769478375d57917c14.p
   },
 ];
 
-function nom () {
-  pictures = Math.floor(Math.random() * deck.length);
-getpic = deck[pictures]
-document.getElementById()
-}
+function get_random_image () {
+  random_index = Math.floor(Math.random() * image_array.length);
+selected_image = image_array[random_index]
+document.getElementById(`image_shower`)
+};
+
