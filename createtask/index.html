@@ -1,36 +1,46 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Document</title>
-    <body>
-      <link rel="stylesheet" href="style.css" />
-    <title>Create Task</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Album Builder</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <h1>Can You Find The Joker?</h1>
-    <div id="app"></div>
-    <script type="module" src="./js/main.js"></script>
-    <div class="main">
-  
-<div class="images">
-<img src="" alt="">
-</div>
-     
- 
-        <button id="yes">yes</button>
-        <button id="no">no</button>
-        <button id="start">start</button>
-        <button id="restart">restart</button>
-
-   
-
-    <section class="display" id="display"></section> 
+    <h1>How Friendly is He?</h1>
+    <h10><img src="https://toppng.com/uploads/preview/stock-person-png-stock-photo-man-11563049686zqeb9zmqjd.png" 
+    alt=""></h10>
+    <section class="form-parent">
+      <form id="form">
+        <div class="form-inputs">
+          <div class="form-input">
+            <label for="name">What Do You Think His Name Would Be?</label>
+            <input type="text" id="name" class="text-box" required />
+          </div>
+          <div class="form-input">
+            <label for="job">What Job Do You Think He Does?</label>
+            <input type="text" id="job" class="text-box" required />
+          </div>
+          <div class="form-input">
+            <label for="rate">Rate How Friendly You Think He Is Out of 10</label>
+            <input type="text" id="rate" class="text-box" required />
+          </div>
+        </div>
+        <div class="hero-form-input">
+          <input type="submit" value="Submit" class="btn" />
+        </div>
+       
+        <button type="button" id="bro">Remove</button>
+        <div id="big-black-box">
+          <p id="text">this is a big black box</p>
+        </div>
+      </form>
+      
     </section>
+    <section class="display" id="display"></section>
+    <script src="index.js" type="module"></script>
+
+
   </body>
 </html>
-
-
-
