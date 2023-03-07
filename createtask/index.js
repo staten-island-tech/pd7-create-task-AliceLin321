@@ -1,11 +1,11 @@
 const DOMSelectors = {
   button: document.getElementById("btn"),
-name:document.getElementById("name"),
-job:document.getElementById("job"),
-rate:document.getElementById("rate"),
+  name:document.getElementById("name"),
+  job:document.getElementById("job"),
+  rate:document.getElementById("rate"),
   form: document.getElementById("form"),
   display: document.getElementById("display"),
- 
+ remove: document.querySelectorAll(".remove"),
 };
 
 function input() {
