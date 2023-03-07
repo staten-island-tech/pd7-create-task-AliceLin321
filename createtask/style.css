@@ -107,7 +107,7 @@ h5 {
 }
 .display-card {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   width: 26%;
   height: 55rem;
@@ -116,9 +116,10 @@ h5 {
   color:black;
   align-items: center;
 }
-.display-img {
-  width: 100%;
+img {
+  width: 40%;
   height: auto;
+margin-left: 30%;
 }
 .display-artist,
 .display-album {
@@ -132,4 +133,8 @@ h5 {
   border: none;
   background-color: red;
   color: white;
+}
+.lol{
+  
+  font-size: 10rem;
 }

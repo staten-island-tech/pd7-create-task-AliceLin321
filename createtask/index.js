@@ -21,9 +21,6 @@ function input() {
 card();
 }
 
-
-
-
 DOMSelectors.form.addEventListener("submit", function (event) {
   event.preventDefault();
   input();
@@ -35,10 +32,11 @@ function card() {
   remove.forEach((el) => {
     el.addEventListener("click", function (el) {
       this.parentElement.remove();
-      previous();
+      removed();
+   
     });
   });
 } 
-function previous() {
-  document.getElementById("Hist").innerHTML = `Previous Number(s): ${history}`;
-}
+function removed() {
+  document.getElementById("History").innerHTML = `Removed Answers: ${history}`;
+};
